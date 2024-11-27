@@ -18,20 +18,8 @@ public class Passport {
             return new Passport(series, number);
         }
 
-        public String getSeries() {
-            return series;
-        }
-
-        public String getNumber() {
-            return number;
-        }
 
         public String getFullPassportNumber() {
-            return fullPassportNumber;
-        }
-
-        @Override
-        public String toString() {
             return fullPassportNumber;
         }
 
@@ -47,5 +35,10 @@ public class Passport {
         @Override
         public int hashCode() {
             return Objects.hash(series, number);
+        }
+
+        @Override
+        public String toString() {
+        return fullPassportNumber;
         }
 }

@@ -14,25 +14,6 @@ public class Student {
         this.groupNumber = groupNumber;
     }
 
-    public String getFirsName() {
-        return firsName;
-    }
-
-
-    public String getSpeciality() {
-        return speciality;
-    }
-
-    public String getGroupNumber() {
-        return groupNumber;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%s, %s, group %s",
-                firsName, speciality, groupNumber);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,5 +27,11 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(firsName, speciality, groupNumber);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s, %s, group %s",
+                firsName, speciality, groupNumber);
     }
 }
